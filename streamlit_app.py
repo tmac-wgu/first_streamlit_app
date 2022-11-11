@@ -28,9 +28,9 @@ def insert_row_snowflake(new_fruit):
     
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
-    my_cur.execute("SELECT * FROM pc_rivery_db.public.fruit_load_list")
-    my_data_rows = my_cur.fetchall()
-    return my_data_rows
+      my_cur.execute("SELECT * FROM pc_rivery_db.public.fruit_load_list")
+      my_data_rows = my_cur.fetchall()
+      return my_data_rows
 
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
